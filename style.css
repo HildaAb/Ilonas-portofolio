@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(53, 51, 71);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-menu a {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  background: rgb(53, 51, 71);
+}
+
+.nav a,
+h4 {
+  color: whitesmoke;
+}
+.nav-menu a:hover nav button {
+  display: none;
+}
+
+.main-picture {
+  display: block;
+  object-fit: cover;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: start;
+  gap: 5rem;
+  height: 100%;
+  background-color: rgb(235, 204, 159);
+}
+
+.text-left {
+  display: flex;
+  justify-content: left;
+  padding-top: 10rem;
+}
+
+main h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  color: rgb(72, 72, 105);
+  margin-top: 7rem;
+}
+
+main h2 {
+  font-size: 3rem;
+  opacity: 0.8;
+  color: whitesmoke;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 1rem;
+  opacity: 0.6;
+}
