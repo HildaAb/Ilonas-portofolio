@@ -1,4 +1,75 @@
 body {
   background-image: url("background.jpg");
-  border-bottom: 3rem solid var(--color-primary);
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  margin-top: -5rem;
+  padding: 4rem;
+  height: 30rem;
+  margin: 7rem auto;
+}
+
+.contact-details li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form-name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact .name {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(220, 220, 231);
+}
+
+.btn {
+  width: max-content;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  color: white;
+}
+
+.contact-details {
+  display: flex;
+  margin-right: 3px;
+}
+
+img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.contact-email {
+  margin-left: 5rem;
 }

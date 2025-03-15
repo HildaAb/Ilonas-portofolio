@@ -1,27 +1,26 @@
 body {
   background-image: url("background.jpg");
-  border-bottom: 3rem solid var(--color-primary);
+  border-bottom: 0.8rem dashed var(--color-primary);
 }
 
 .projects-container {
   margin-top: 8rem;
   color: white;
-  display: flex;
-  justify-content: left;
 }
 
 section a {
   color: white;
 }
 
-section h3 {
+h3 {
   font-size: 1.9rem;
   margin-top: 5px;
+  margin-bottom: 1rem;
 }
 
 section ul {
-  margin-top: 7rem;
-  margin-left: -6.4rem;
+  margin-top: 1rem;
+  margin-left: 0.1rem;
   display: grid;
   grid-template-columns: 10% 90%;
   justify-content: start;
@@ -45,6 +44,9 @@ section ul {
 }
 
 .link-container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 2rem;
 }
 
 .website-links {
