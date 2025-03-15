@@ -4,10 +4,11 @@ body {
 }
 
 img {
-  width: 25rem;
+  width: 26rem;
   height: 15rem;
   display: block;
   border-radius: 8px;
+  border-bottom: 1.3rem solid var(--color-primary);
 }
 
 .about-container {

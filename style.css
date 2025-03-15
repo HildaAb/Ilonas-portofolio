@@ -1,5 +1,5 @@
 :root {
-  --color-primary: rgb(53, 51, 71);
+  --color-primary: rgb(73, 61, 121);
   --color-background: rgb(235, 204, 159);
 }
 
@@ -38,7 +38,7 @@ nav {
 .nav-menu a {
   font-size: 1.2rem;
   color: whitesmoke;
-  background: rgb(53, 51, 71);
+  background: var(--color-primary);
 }
 
 .nav a,
@@ -82,17 +82,10 @@ main h1 {
   font-size: 4.5em;
   font-weight: bold;
   color: rgb(39, 12, 56);
-  margin-top: 7rem;
+  margin-top: 9rem;
 }
 
 main h2 {
   font-size: 3.5rem;
   color: white;
-}
-
-main h3 {
-  font-size: 2rem;
-  font-style: italic;
-  margin-top: 1rem;
-  opacity: 0.8;
 }

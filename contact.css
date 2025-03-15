@@ -1,3 +1,4 @@
 body {
   background-image: url("background.jpg");
+  border-bottom: 3rem solid var(--color-primary);
 }

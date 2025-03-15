@@ -1,4 +1,57 @@
 body {
   background-image: url("background.jpg");
+  border-bottom: 3rem solid var(--color-primary);
+}
+
+.projects-container {
+  margin-top: 8rem;
   color: white;
+  display: flex;
+  justify-content: left;
+}
+
+section a {
+  color: white;
+}
+
+section h3 {
+  font-size: 1.9rem;
+  margin-top: 5px;
+}
+
+section ul {
+  margin-top: 7rem;
+  margin-left: -6.4rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  justify-content: start;
+  font-size: 1rem;
+  width: 1300px;
+  min-height: 300px;
+}
+
+.website {
+  padding: 0.6rem;
+  margin-right: 7px;
+  border: 1.3px solid rgb(157, 249, 36);
+  background-color: rgb(18, 1, 32);
+  color: white;
+}
+
+.grid {
+  display: flex;
+  justify-content: left;
+  padding-top: 0.7rem;
+}
+
+.link-container {
+}
+
+.website-links {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1.3px solid rgb(157, 249, 36);
+  background-color: rgb(18, 1, 32);
+  color: white;
+  margin-left: 0.6rem;
 }
