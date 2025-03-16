@@ -1,6 +1,5 @@
 body {
   background-image: url("background.jpg");
-  border-bottom: 0.8rem dashed var(--color-primary);
 }
 
 .projects-container {
@@ -33,7 +32,7 @@ section ul {
   padding: 0.6rem;
   margin-right: 7px;
   border: 1.3px solid rgb(157, 249, 36);
-  background-color: rgb(18, 1, 32);
+  background: var(--color-primary);
   color: white;
 }
 
