@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(222, 213, 213);
+}
+
 nav {
   width: 100vw;
   height: 5rem;
@@ -36,18 +41,30 @@ nav {
   gap: 4rem;
 }
 
-.nav-menu a {
+.nav-menu a,
+.nav-name {
   font-size: 1.2rem;
   color: whitesmoke;
   background: var(--color-primary);
 }
 
-.nav a,
-h4 {
-  color: whitesmoke;
+.nav-menu a:hover,
+.nav-name:hover {
+  color: rgb(138, 196, 198);
+  font-weight: bold;
 }
-.nav-menu a:hover nav button {
+
+nav button {
   display: none;
+}
+
+.nav-img-open,
+.nav-img-close {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: white;
+  visibility: visible;
 }
 
 .main-picture {
@@ -67,7 +84,6 @@ main {
   align-items: start;
   gap: 5rem;
   height: 100%;
-  background-image: url("background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 1000px;
@@ -81,26 +97,94 @@ main {
 }
 
 main h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-weight: bold;
   color: rgb(39, 12, 56);
-  margin-top: 6.5rem;
+  margin-top: 10rem;
 }
 
 main h2 {
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   margin-top: 1rem;
   color: white;
+  margin-bottom: 0.5rem;
 }
 
 main h3 {
-  font-size: 2.8rem;
+  font-size: 1.3rem;
   text-align: center;
-  color: white;
+  color: rgb(55, 54, 54);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1020px) {
+  nav button {
+    background: transparent;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  nav button#close-menu-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 15rem;
+    flex-direction: column;
+    gap: 0;
+    display: block;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    height: 4rem;
+    animation: animationNavItems 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .nav-menu li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .nav-menu li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .nav-menu li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+
+  @keyframes animationNavItems {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(1);
+    }
+    100% {
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav-menu li a {
+    background: rgb(150, 122, 179);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-menu li a:hover {
+    background: rgb(106, 63, 146);
+    color: white;
+  }
+
   .main-container {
     grid-template-columns: 25% 75%;
   }
@@ -111,6 +195,10 @@ main h3 {
 }
 
 @media (max-width: 860px) {
+  .nav-menu {
+    right: 3%;
+  }
+
   .main-container {
     grid-template-columns: 30% 70%;
   }
