@@ -56,7 +56,7 @@ textarea {
   margin-bottom: 1rem;
 }
 
-h5 {
+h2 {
   color: white;
 }
 
@@ -73,4 +73,58 @@ img {
 
 .contact-email {
   margin-left: 5rem;
+}
+
+@media (max-width: 1020px) {
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact-container {
+    gap: 1rem;
+    margin-top: 10rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 8rem;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    margin: 0 1.5rem 3rem;
+  }
+
+  .form-name {
+    flex-direction: column;
+  }
+
+  .contact .name {
+    width: 100%;
+  }
+
+  .contact-details {
+    display: block;
+    margin-left: 50px;
+    margin-top: -2rem;
+    color: white;
+  }
+
+  .contact-email {
+    margin-left: 0;
+  }
 }

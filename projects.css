@@ -57,3 +57,28 @@ section ul {
   color: white;
   margin-left: 0.6rem;
 }
+
+@media (max-width: 911px) {
+  section ul {
+    grid-template-columns: 1fr;
+    margin: 0.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  section ul {
+    grid-template-columns: 1fr;
+    margin: 0.5px;
+  }
+
+  .website {
+    display: none;
+  }
+
+  .website-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 5px;
+    font-size: 11px;
+  }
+}

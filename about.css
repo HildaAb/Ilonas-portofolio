@@ -28,3 +28,20 @@ p {
   font-size: 1.2rem;
   width: 30rem;
 }
+
+@media (max-width: 1020px) {
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+}
