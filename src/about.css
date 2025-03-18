@@ -12,34 +12,53 @@ img {
 }
 
 .about-container {
-  margin-top: 6rem;
-  padding: 2rem;
+  padding: 8rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  line-height: 1.3;
 }
 
 h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-size: 2rem;
 }
 
 p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-size: 1.2rem;
   font-weight: 500;
   width: 29rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
+  .about-container {
+    margin-top: 8rem;
+  }
+
+  .about-container h3 {
+    margin-top: 20rem;
+  }
 }
 
 @media (max-width: 600px) {
   .about-container {
     grid-template-columns: 1fr;
+    padding-top: 11rem;
+    margin-top: 0;
   }
 
   img {
-    margin-bottom: 30px;
+    margin-bottom: -80px;
+  }
+
+  .about-container .first-part {
+    padding-top: 3rem;
+    margin-top: -27rem;
+  }
+
+  .about-container .second-part {
+    padding-top: 3rem;
+    margin-top: -17rem;
   }
 
   p {
