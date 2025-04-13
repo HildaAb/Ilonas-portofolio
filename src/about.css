@@ -66,3 +66,9 @@ p {
     margin-bottom: 35px;
   }
 }
+
+@media (max-width: 412px) {
+  main .text-left {
+    margin: 0 1.3rem;
+  }
+}

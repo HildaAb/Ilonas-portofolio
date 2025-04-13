@@ -170,6 +170,7 @@ main h1 {
   font-weight: bold;
   color: rgb(39, 12, 56);
   margin-top: 16rem;
+  text-align: start;
 }
 
 main h2 {
