@@ -188,6 +188,10 @@ main h3 {
 }
 
 @media (max-width: 1024px) {
+  header {
+    margin-top: -160px;
+  }
+
   .main-container {
     grid-template-columns: 50% 50%;
   }
@@ -201,7 +205,7 @@ main h3 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .main-container {
     grid-template-columns: 1fr;
   }
@@ -214,5 +218,32 @@ main h3 {
   main h2,
   main h3 {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  main h1 {
+    font-size: 2.6rem;
+    margin-top: -4rem;
+    margin-left: -70px;
+  }
+
+  main h2,
+  main h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  header {
+    margin-top: -10px;
+  }
+
+  main h1 {
+    margin-left: -20px;
   }
 }

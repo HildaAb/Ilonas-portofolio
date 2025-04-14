@@ -58,14 +58,14 @@ section ul {
   margin-left: 0.6rem;
 }
 
-@media (max-width: 911px) {
+@media (max-width: 810px) {
   section ul {
     grid-template-columns: 1fr;
     margin: 0.5px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   section ul {
     grid-template-columns: 1fr;
     margin: 0.5px;

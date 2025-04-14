@@ -41,7 +41,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about-container {
     grid-template-columns: 1fr;
     padding-top: 11rem;
@@ -49,7 +49,16 @@ p {
   }
 
   img {
-    margin-bottom: -80px;
+    margin: 0 auto;
+    width: 80%;
+    height: 25%;
+    margin-bottom: 70px;
+  }
+
+  .image2 {
+    margin: 0 auto;
+    width: 80%;
+    height: 15%;
   }
 
   .about-container .first-part {
@@ -59,16 +68,35 @@ p {
 
   .about-container .second-part {
     padding-top: 3rem;
-    margin-top: -17rem;
+    margin-top: -27rem;
   }
 
   p {
+    width: 700px;
     margin-bottom: 35px;
   }
 }
+@media (max-width: 430px) {
+  .about-container {
+    max-width: 300px;
+  }
 
-@media (max-width: 412px) {
-  main .text-left {
-    margin: 0 1.3rem;
+  h3,
+  p {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    width: 380px;
+    font-size: 17px;
+  }
+
+  .image2 {
+    margin-bottom: 30px;
   }
 }
